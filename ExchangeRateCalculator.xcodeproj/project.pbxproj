@@ -16,9 +16,8 @@
 		DF54DC762C47C0E500A3FA1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DC752C47C0E500A3FA1B /* HomeView.swift */; };
 		DF54DC782C47C0FE00A3FA1B /* CalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */; };
 		DF54DC7A2C47C10D00A3FA1B /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DC792C47C10D00A3FA1B /* RecordView.swift */; };
-		DF54DCB42C56789800A3FA1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DCB32C56789800A3FA1B /* MapView.swift */; };
-		DF54DCF02C62432400A3FA1B /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DCEF2C62432400A3FA1B /* MapDetailView.swift */; };
 		DF54DCF22C62444500A3FA1B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DCF12C62444500A3FA1B /* Model.swift */; };
+		DFC9EE552C6B4348002A2B20 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +50,8 @@
 		DF54DC752C47C0E500A3FA1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationView.swift; sourceTree = "<group>"; };
 		DF54DC792C47C10D00A3FA1B /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
-		DF54DCB32C56789800A3FA1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		DF54DCEF2C62432400A3FA1B /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
 		DF54DCF12C62444500A3FA1B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +106,7 @@
 				DF52E1792C47A2C500F33926 /* Assets.xcassets */,
 				DF52E1772C47A2C400F33926 /* ContentView.swift */,
 				DF54DC752C47C0E500A3FA1B /* HomeView.swift */,
-				DF54DCB32C56789800A3FA1B /* MapView.swift */,
-				DF54DCEF2C62432400A3FA1B /* MapDetailView.swift */,
+				DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */,
 				DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */,
 				DF54DC792C47C10D00A3FA1B /* RecordView.swift */,
 				DF54DCF12C62444500A3FA1B /* Model.swift */,
@@ -264,12 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF54DC762C47C0E500A3FA1B /* HomeView.swift in Sources */,
-				DF54DCB42C56789800A3FA1B /* MapView.swift in Sources */,
 				DF52E1782C47A2C400F33926 /* ContentView.swift in Sources */,
 				DF54DC782C47C0FE00A3FA1B /* CalculationView.swift in Sources */,
 				DF54DC7A2C47C10D00A3FA1B /* RecordView.swift in Sources */,
-				DF54DCF02C62432400A3FA1B /* MapDetailView.swift in Sources */,
 				DF52E1762C47A2C400F33926 /* ExchangeRateCalculatorApp.swift in Sources */,
+				DFC9EE552C6B4348002A2B20 /* ExchangeRate.swift in Sources */,
 				DF54DCF22C62444500A3FA1B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

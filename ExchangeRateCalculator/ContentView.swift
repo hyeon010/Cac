@@ -25,9 +25,9 @@ struct ContentView: View {
                 }
                 .tag(Tab.home)
             
-            MapView()
+            ExchangeRate()
                 .tabItem {
-                    Label("환전소", systemImage: "heart.fill")
+                    Label("환율", systemImage: "heart.fill")
                 }
                 .tag(Tab.mapview)
 

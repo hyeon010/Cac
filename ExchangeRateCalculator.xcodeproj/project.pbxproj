@@ -17,7 +17,7 @@
 		DF54DC782C47C0FE00A3FA1B /* CalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */; };
 		DF54DC7A2C47C10D00A3FA1B /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DC792C47C10D00A3FA1B /* RecordView.swift */; };
 		DF54DCF22C62444500A3FA1B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54DCF12C62444500A3FA1B /* Model.swift */; };
-		DFC9EE552C6B4348002A2B20 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */; };
+		DFC9EE592C6DFEA9002A2B20 /* ExchageRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9EE582C6DFEA9002A2B20 /* ExchageRateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationView.swift; sourceTree = "<group>"; };
 		DF54DC792C47C10D00A3FA1B /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		DF54DCF12C62444500A3FA1B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		DFC9EE582C6DFEA9002A2B20 /* ExchageRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchageRateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +102,14 @@
 		DF52E1742C47A2C400F33926 /* ExchangeRateCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				DF52E1752C47A2C400F33926 /* ExchangeRateCalculatorApp.swift */,
 				DF52E1792C47A2C500F33926 /* Assets.xcassets */,
+				DF52E1752C47A2C400F33926 /* ExchangeRateCalculatorApp.swift */,
 				DF52E1772C47A2C400F33926 /* ContentView.swift */,
 				DF54DC752C47C0E500A3FA1B /* HomeView.swift */,
-				DFC9EE542C6B4348002A2B20 /* ExchangeRate.swift */,
 				DF54DC772C47C0FE00A3FA1B /* CalculationView.swift */,
 				DF54DC792C47C10D00A3FA1B /* RecordView.swift */,
 				DF54DCF12C62444500A3FA1B /* Model.swift */,
+				DFC9EE582C6DFEA9002A2B20 /* ExchageRateView.swift */,
 			);
 			path = ExchangeRateCalculator;
 			sourceTree = "<group>";
@@ -262,10 +262,10 @@
 			files = (
 				DF54DC762C47C0E500A3FA1B /* HomeView.swift in Sources */,
 				DF52E1782C47A2C400F33926 /* ContentView.swift in Sources */,
+				DFC9EE592C6DFEA9002A2B20 /* ExchageRateView.swift in Sources */,
 				DF54DC782C47C0FE00A3FA1B /* CalculationView.swift in Sources */,
 				DF54DC7A2C47C10D00A3FA1B /* RecordView.swift in Sources */,
 				DF52E1762C47A2C400F33926 /* ExchangeRateCalculatorApp.swift in Sources */,
-				DFC9EE552C6B4348002A2B20 /* ExchangeRate.swift in Sources */,
 				DF54DCF22C62444500A3FA1B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

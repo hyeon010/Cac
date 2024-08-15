@@ -1,23 +1,16 @@
-//
-//  HomeView.swift
-//  ExchangeRateCalculator
-//
-//  Created by 박상현 on 7/17/24.
-//
-
 import SwiftUI
 
 struct HomeView: View {
+    
+    @Binding var recordedItems: [String]
+
     var body: some View {
-        
         NavigationView {
-        
             VStack {
                 // 현재 날짜 표시
                 Text("\(Date(), formatter: dateFormatter)")
                     .font(.subheadline)
                     .padding(.top, 10)
-                
                 
                 // 환영 메시지
                 Text("환율계산기")
@@ -31,14 +24,40 @@ struct HomeView: View {
                     .padding()
                     .multilineTextAlignment(.center)
                 
-                Spacer()
                 
-                // 간단한 이미지나 아이콘
-                Image(systemName: "arrow.2.circlepath")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 150)
-                    .padding(.bottom, 50)
+                
+                VStack(spacing: 20) {
+                    NavigationLink(destination: ExchageRateView(recordedItems:$recordedItems)) {
+                        Text("- 오늘의 환율 보기")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                           
+                    }
+                    
+                    NavigationLink(destination: CalculationView(recordedItems: $recordedItems)) {
+                        Text("- 환율 계산하기")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            
+                    }
+                    
+                    NavigationLink(destination: RecordView(recordedItems: $recordedItems)) {
+                        Text("- 기록된 환율 보기")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            
+                    }
+                }
+                .padding(.top, 50)
                 
                 Spacer()
             }
@@ -56,7 +75,6 @@ private let dateFormatter: DateFormatter = {
 }()
 
 #Preview {
-    HomeView()
+    HomeView(recordedItems: .constant([]))
 }
-
 

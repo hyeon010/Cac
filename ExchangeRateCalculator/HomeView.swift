@@ -34,6 +34,7 @@ struct HomeView: View {
                             .padding()
                             .background(Color.black)
                             .foregroundColor(.white)
+                            
                            
                     }
                     
@@ -57,7 +58,7 @@ struct HomeView: View {
                             
                     }
                 }
-                .padding(.top, 50)
+                .padding(.top, 70)
                 
                 Spacer()
             }

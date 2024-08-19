@@ -55,7 +55,7 @@ struct ExchageRateView: View {
         .onAppear {
             Task {
                 do {
-                    exchangeRates = try await getExchangeRates(date: "20240724")
+                    exchangeRates = try await getExchangeRates(date: "20240819") //날짜를 따로 지정해둠
                     dump(exchangeRates)
                 } catch {
                     print("Failed to fetch data: \(error)")

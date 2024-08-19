@@ -18,11 +18,11 @@ enum ButtonType: String { // 버튼
     var backgroundColor: Color { // 계산기 글자의 배경 색
         switch self {
         case .clear, .opposite, .percent:
-            return Color.gray
-        case .divide, .multiple, .minus, .plus, .equal:
             return Color.orange
+        case .divide, .multiple, .minus, .plus, .equal:
+            return Color.yellow
         default:
-            return Color(.darkGray)
+            return Color.green
         }
     } //switch self 는 열거형의 값에 대해 self 사용
     
@@ -40,6 +40,7 @@ enum Currency: String, CaseIterable { // CaseIterable은 .allCases를 사용해 
     case 대한민국 = "KRW", 미국 = "USD", 중국 = "CNY", 일본 = "JPY", 유럽연합 = "EUR", 영국 = "GBP", 호주 = "AUD"
     
     var exchangeRate: Double { // 일단 환율에 대한 정보
+        // 환율 정보를 API로 불러왔으니까, 그 정보를 토대로 계산하게 해야함
         switch self {
         case .대한민국: return 1.0
         case .미국: return 0.00083
@@ -72,6 +73,7 @@ struct CalculationView: View {
     @State private var convertedText = "0" // 출력값
     @State private var operatorType: ButtonType? = nil //?는 옵셔널타입, 값이 있을수도 없을수도 있다.
     @Binding var recordedItems: [String] //@state는 뷰 상태를 계속 보여주게 하고, @binding은 부모뷰의 데이터를 자식뷰가 사용
+    
 
     private let buttonData: [[ButtonType]] = [
         [.clear, .opposite, .percent, .divide],
